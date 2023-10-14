@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block title %}
+  Home
+{% endblock %}
+
+{% block content %}
+  <h1>TESTING...</h1>
+
+  <!--        {% if login %}
+    {% block messageGreen %}
+      {{ session['name'] }} logged in !!
+    {% endblock %}
+  {% endif %}         -->
+
+  <div class="input-group mb-3">
+    <form>
+      <input type="text" class="form-control" placeholder="Message" aria-label="Message" id="msg" />
+      <button class="btn btn-outline-secondary" type="button" id="sendBtn">Send</button>
+    </form>
+  </div>
+{% endblock %}

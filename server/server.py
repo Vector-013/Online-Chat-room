@@ -45,7 +45,7 @@ def client_communication(person):
     name = client.recv(BUFSIZ).decode("utf8")
     person.set_name(name)
     msg = bytes(f"{name} has joined the chat!!", "utf8")
-    broadcast(msg, "")  # broadcast welcom message
+    broadcast(msg, "")  # broadcast welcome message
     run = True
     while run:
         try:
